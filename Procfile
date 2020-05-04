@@ -1,1 +1,1 @@
-"web: gunicorn DashBoardCovid19.wsgi --log-file -" 
+web: gunicorn DashBoardCovid19.wsgi --log-file -
