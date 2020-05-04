@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47b4e0b5-f0f5-461a-9483-236c7bd3dc78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DashBoardCovid19/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashBoardCovid19/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detail.csv" beforeDir="false" afterPath="$PROJECT_DIR$/detail.csv" afterDir="false" />
-    </list>
+    <list default="true" id="47b4e0b5-f0f5-461a-9483-236c7bd3dc78" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -112,7 +106,7 @@
       <workItem from="1587737806639" duration="54050000" />
       <workItem from="1587894585217" duration="34166000" />
       <workItem from="1588147028227" duration="67678000" />
-      <workItem from="1588506956481" duration="50807000" />
+      <workItem from="1588506956481" duration="51482000" />
     </task>
     <servers />
   </component>
