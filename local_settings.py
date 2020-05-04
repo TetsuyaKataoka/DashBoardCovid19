@@ -10,3 +10,5 @@ DATABASES = {
         'POST': '5432'
     }
 }
+
+DEBUG = True
