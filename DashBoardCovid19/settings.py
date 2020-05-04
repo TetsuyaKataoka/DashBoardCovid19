@@ -129,11 +129,11 @@ USE_TZ = False
 # 開発時、STATIC_ROOTをコメントアウト
 # デプロイ時、STATICFILES_DIRSをコメントアウト
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, "static"),
+# )
 
 # TEMPLATE上の数値をカンマ区切りで表示するための設定
 NUMBER_GROUPING = 3
