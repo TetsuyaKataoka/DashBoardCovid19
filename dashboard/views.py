@@ -110,3 +110,6 @@ def view_report_detail_by_sort(request):
     dict_report_detail = logics.get_report_detail(start_date, end_date, 7, filter_countries)
 
     return JsonResponse(json.dumps(dict_report_detail), safe=False)
+
+def main(request):
+    return render(request, 'sample.html')

@@ -109,6 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# TEMPLATE上の数値をカンマ区切りで表示するための設定
+NUMBER_GROUPING = 3
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
@@ -122,40 +125,35 @@ USE_L10N = True
 
 USE_TZ = False
 
-# デプロイ時にコメントアウトを外す
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
 # staticファイルを置く場所を指定。
 # 開発時、STATIC_ROOTをコメントアウト
 # デプロイ時、STATICFILES_DIRSをコメントアウト
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = '/static/'
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, "static"),
-# )
-
-# TEMPLATE上の数値をカンマ区切りで表示するための設定
-NUMBER_GROUPING = 3
 
 
 
-#デプロイのために追加　2020/05/04
+#デプロイ時にコメントアウトを外す　2020/05/04
 import dj_database_url
 DATABASES['default'] = dj_database_url.config()
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-ALLOWED_HOSTS = ['*']
-
-DEBUG = False
-
 try:
     from .local_settings import *
 except ImportError:
     pass
+
+# デプロイ時にコメントアウトを外す
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+
+
+ALLOWED_HOSTS = ['*']
+DEBUG = False
 
 
