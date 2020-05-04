@@ -1,0 +1,159 @@
+{%  extends "common/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+        {% block title_block %}
+            感染者の詳細
+        {% endblock %}
+
+        {% block content_block %}
+            {{ dict_report_detail|json_script:"dict_report_detail" }}
+            <div class = "row">
+                <div class="col-sm-4">
+                    <!-- Select multiple-->
+                    <div class="form-group">
+                        <label>フィルタ</label>
+                        <select class="form-control" id="sort_type" name="name_sort_type"  data-url="{% url 'view_report_detail_by_sort' %}">
+                            <option value='1'>累計感染者数</option>
+                            <option value='2'>累計死亡者数</option>
+                            <option value='3'>陽性患者数</option>
+                            <option value='4'>回復者数</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                <!-- 累計感染者数 -->
+                <div class="card card-dark">
+                    <div class="card-header">
+                        <h3 class="card-title">累計感染者数 （国別）</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart">
+                            <canvas id="report_total_cases" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                        </div>
+                    </div>
+                <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+
+                <!-- 陽性患者数 -->
+                <div class="card card-danger">
+                    <div class="card-header">
+                        <h3 class="card-title">陽性患者数</h3>
+
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="report_active_cases" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                    </div>
+                <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+
+                <!-- PIE CHART -->
+                <div class="card card-danger">
+                    <div class="card-header">
+                        <h3 class="card-title">Pie Chart</h3>
+
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    <canvas id="pieChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                </div>
+                <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+
+                </div>
+                <!-- /.col (LEFT) -->
+                <div class="col-md-6">
+                    <!-- LINE CHART -->
+                    <div class="card card-indigo">
+                        <div class="card-header">
+                            <h3 class="card-title">累計死亡者数</h3>
+
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart">
+                                <canvas id="report_total_deaths" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                            </div>
+                        </div>
+                    <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+
+                    <!-- 回復者数 -->
+                    <div class="card card-olive">
+                        <div class="card-header">
+                            <h3 class="card-title">回復者数</h3>
+
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart">
+                                <canvas id="report_total_recovered" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                            </div>
+                        </div>
+                    <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+
+                <!-- STACKED BAR CHART -->
+                <div class="card card-success">
+                    <div class="card-header">
+                        <h3 class="card-title">Stacked Bar Chart</h3>
+
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                        <div class="card-body">
+                            <div class="chart">
+                                <canvas id="stackedBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                            </div>
+                        </div>
+                    <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+
+                </div>
+            <!-- /.col (RIGHT) -->
+            </div>
+        <!-- /.row -->
+       <script src="{% static 'js/report-detail.js' %}"></script>
+{#        <script src="{% static 'js/update_report_detail.js' %}"></script>#}
+        {% endblock %}

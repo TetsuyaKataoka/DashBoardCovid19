@@ -1,0 +1,7 @@
+<div class="row row-40">
+    {% for dict_latest_report in dict_latest_reports %}
+        <div class="col-md-3 offset-1 border border-light">
+            <canvas id='dohnuts_chart_{{ dict_latest_report.location__country_region_name }}' style="cursor: hand; cursor:pointer;"></canvas>
+        </div>
+    {% endfor %}
+</div>

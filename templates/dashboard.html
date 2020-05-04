@@ -1,0 +1,53 @@
+{%  extends "common/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+        {% block title_block %}
+            Covid-19 ダッシュボード
+        {% endblock %}
+
+        {% block content_block %}
+            {{ dict_latest_reports|json_script:"dict_latest_reports" }}
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                    </div>
+                </div>
+                {#表示する国数の上限値設定#}
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-control bg-danger border-danger">
+                            <form method="post" data-view-countries-max-url="{% url 'view_countries_max' %}">
+                                {% csrf_token %}
+                                <label for="id_max_countries" class="text-white"> 表示件数を選択→
+                                    <select id="id_max_countries" name="max_countries" class="bg-danger border-danger text-white">
+                                        <option value="10">上位10カ国</option>
+                                        <option value="50">上位50カ国</option>
+                                        <option value="100">上位100カ国</option>
+                                        <option value="-1" selected>世界</option>
+                                    </select>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-control bg-danger border-danger">
+                            <form method="post" action="{% url 'update_reports' %}">
+                                {% csrf_token %}
+                                <label for="id_report_date" class="text-white"> 日付を選択→
+                                    <input type='text' name='report_date'>
+                                    <input type='submit' value="レポートの取得" >
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id = 'reload_area'>
+                    {% include 'canvasArea.html' %}
+                </div>
+
+                <script type="text/javascript" src="{% static 'js/Dashboard.js' %}"></script>
+                <script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+            </div>
+        {% endblock %}

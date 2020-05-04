@@ -1,0 +1,81 @@
+{%  extends "common/base.html" %}
+{% load static %}
+{% load humanize %}
+<!DOCTYPE html>
+        {% block title_block %}
+            トップページ
+        {% endblock %}
+
+        {% block content_block %}
+            <div id="title-block" class="text-center text-dark font-weight-bold">
+                <h1>World Coronavirus Update</h1>
+            </div>
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+                <div class="col-lg-3 col-6 text-center">
+                <!-- small box -->
+                    <div class="small-box bg-gradient-gray-dark">
+                        <div class="inner">
+                            <h5>累計感染者数</h5>
+                            <h4>{{ dict_world_summary_report.total_cases | intcomma}}</h4>
+                            <h5>(+{{ dict_world_summary_report.diff_total_cases | intcomma}})</h5>
+                         </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6 text-center">
+                    <!-- small box -->
+                    <div class="small-box bg-gradient-danger">
+                        <div class="inner">
+                            <h5>陽性患者数</h5>
+                            <h4>{{ dict_world_summary_report.active_cases | intcomma}}</h4>
+                            <h5>(+{{ dict_world_summary_report.diff_active_cases | intcomma}})</h5>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                     </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6 text-center">
+                    <!-- small box -->
+                    <div class="small-box bg-gradient-indigo">
+                        <div class="inner">
+                            <h5>死亡者数</h5>
+                            <h4>{{ dict_world_summary_report.total_deaths | intcomma}}</h4>
+                            <h5>(+{{ dict_world_summary_report.diff_total_deaths | intcomma}})</h5>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-person-add"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6 text-center">
+                    <!-- small box -->
+                    <div class="small-box bg-gradient-olive">
+                        <div class="inner">
+                            <h5>回復者数</h5>
+                            <h4>{{ dict_world_summary_report.total_recovered | intcomma}}</h4>
+                            <h5>(+{{ dict_world_summary_report.diff_total_recovered | intcomma}})</h5>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-pie-graph"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ./col -->
+            </div>
+          <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12 col-6 text-center">
+                    <a href="{% url 'view_report_detail' %}" class="btn btn-outline-dark btn-lg btn-block">詳細のレポートを見る </a>
+                </div>
+            </div>
+        {% endblock %}
