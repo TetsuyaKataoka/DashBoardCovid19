@@ -122,6 +122,9 @@ USE_L10N = True
 
 USE_TZ = False
 
+# デプロイ時にコメントアウトを外す
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 

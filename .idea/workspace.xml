@@ -3,29 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47b4e0b5-f0f5-461a-9483-236c7bd3dc78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/local_settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-3.3.1.dist-info/DESCRIPTION.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-3.3.1.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-3.3.1.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-3.3.1.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-3.3.1.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-3.3.1.dist-info/metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-3.3.1.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/compress.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/compress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/django.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/django.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/httpstatus_backport.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/httpstatus_backport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/media_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/media_types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/responders.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/responders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/runserver_nostatic/management/commands/runserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/runserver_nostatic/management/commands/runserver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/scantree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/scantree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/static_file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/string_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/string_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DashBoardCovid19/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashBoardCovid19/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +106,7 @@
       <workItem from="1587737806639" duration="54050000" />
       <workItem from="1587894585217" duration="34166000" />
       <workItem from="1588147028227" duration="67678000" />
-      <workItem from="1588506956481" duration="39802000" />
+      <workItem from="1588506956481" duration="40637000" />
     </task>
     <servers />
   </component>
