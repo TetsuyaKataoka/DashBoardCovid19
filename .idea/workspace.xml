@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47b4e0b5-f0f5-461a-9483-236c7bd3dc78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/sample.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DashBoardCovid19/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashBoardCovid19/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DashBoardCovid19/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashBoardCovid19/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +107,7 @@
       <workItem from="1587737806639" duration="54050000" />
       <workItem from="1587894585217" duration="34166000" />
       <workItem from="1588147028227" duration="67678000" />
-      <workItem from="1588506956481" duration="42750000" />
+      <workItem from="1588506956481" duration="43456000" />
     </task>
     <servers />
   </component>
