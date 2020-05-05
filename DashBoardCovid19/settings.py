@@ -132,8 +132,9 @@ USE_TZ = False
 # 開発時、STATIC_ROOTをコメントアウト
 # デプロイ時、STATICFILES_DIRSをコメントアウト
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = '/static/'
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+
 
 # デプロイ時にコメントアウトを外す　2020/05/04
 import dj_database_url
@@ -153,4 +154,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # ホストの設定
 ALLOWED_HOSTS = ['*']
-DEBUG = False
+DEBUG = True
