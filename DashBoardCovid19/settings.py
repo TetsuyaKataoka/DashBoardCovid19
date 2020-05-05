@@ -128,12 +128,22 @@ USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-# staticファイルを置く場所を指定。
+
 # 開発時、STATIC_ROOTをコメントアウト
-# デプロイ時、STATICFILES_DIRSをコメントアウト
+# STATIC_ROOT:本番環境でのみ利用される。nginxで静的ファイルを配信したい場合など。
+# manage.py collectstaticによって静的ファイルがここにコピーされる
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = '/static/'
+
+# STATICFILES_DIRS
+# 他のファイル（アプリケーションファイル配下じゃなくても可能）から静的ファイルを取得したいときに指定できる。
+# 前述のSTATIC_ROOTにコピーされる。
+# デプロイ時、STATICFILES_DIRSをコメントアウト
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+
+# # デプロイ時にコメントアウトを外す
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATIC_URL = '/static/'
 
 
 # デプロイ時にコメントアウトを外す　2020/05/04
@@ -149,9 +159,6 @@ try:
 except ImportError:
     pass
 
-# # デプロイ時にコメントアウトを外す
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 # ホストの設定
 ALLOWED_HOSTS = ['*']
-DEBUG = True
+DEBUG = False
