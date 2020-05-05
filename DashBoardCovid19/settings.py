@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -134,24 +135,22 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = '/static/'
 
+# デプロイ時にコメントアウトを外す　2020/05/04
+import dj_database_url
 
+DATABASES['default'] = dj_database_url.config()
 
-#デプロイ時にコメントアウトを外す　2020/05/04
-# import dj_database_url
-# DATABASES['default'] = dj_database_url.config()
-#
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-#
-# try:
-#     from .local_settings import *
-# except ImportError:
-#     pass
-#
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+try:
+    from .local_settings import *
+    django_heroku.settings(locals())
+except ImportError:
+    pass
+
 # # デプロイ時にコメントアウトを外す
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # ホストの設定
 ALLOWED_HOSTS = ['*']
 DEBUG = False
-
-
