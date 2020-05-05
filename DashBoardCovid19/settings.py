@@ -163,3 +163,22 @@ except ImportError:
 # ホストの設定
 ALLOWED_HOSTS = ['*']
 DEBUG = False
+
+# ログのセット
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+        },
+    },
+}
+
+
