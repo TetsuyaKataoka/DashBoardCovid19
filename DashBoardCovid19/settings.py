@@ -137,22 +137,20 @@ STATIC_URL = '/static/'
 
 
 #デプロイ時にコメントアウトを外す　2020/05/04
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+# import dj_database_url
+# DATABASES['default'] = dj_database_url.config()
+#
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#
+# try:
+#     from .local_settings import *
+# except ImportError:
+#     pass
+#
+# # デプロイ時にコメントアウトを外す
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-try:
-    from .local_settings import *
-except ImportError:
-    pass
-
-# デプロイ時にコメントアウトを外す
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-
-
-
+# ホストの設定
 ALLOWED_HOSTS = ['*']
 DEBUG = False
 
