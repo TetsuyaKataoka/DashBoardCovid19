@@ -161,5 +161,5 @@ except ImportError:
     pass
 
 # ホストの設定
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = [*]
 DEBUG = False
