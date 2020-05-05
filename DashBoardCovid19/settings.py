@@ -156,7 +156,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 try:
     from .local_settings import *
-    django_heroku.settings(locals())
+    # django_heroku.settings(locals())
 except ImportError:
     pass
 
