@@ -161,5 +161,5 @@ except ImportError:
     pass
 
 # ホストの設定
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 DEBUG = False
