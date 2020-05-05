@@ -145,6 +145,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_URL = '/static/'
 
+ADMINS = (('Tetsuya Kataoka', 'tetsuyakataoka@outlook.jp'),)
 
 # デプロイ時にコメントアウトを外す　2020/05/04
 import dj_database_url
