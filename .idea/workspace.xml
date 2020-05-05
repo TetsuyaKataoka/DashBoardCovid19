@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47b4e0b5-f0f5-461a-9483-236c7bd3dc78" name="Default Changelist" comment="" />
+    <list default="true" id="47b4e0b5-f0f5-461a-9483-236c7bd3dc78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +108,16 @@
       <workItem from="1587737806639" duration="54050000" />
       <workItem from="1587894585217" duration="34166000" />
       <workItem from="1588147028227" duration="67678000" />
-      <workItem from="1588506956481" duration="51482000" />
+      <workItem from="1588506956481" duration="53275000" />
     </task>
+    <task id="LOCAL-00001" summary="workspace">
+      <created>1588629542343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588629542343</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +133,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
