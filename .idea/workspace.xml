@@ -41,7 +41,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/mainContent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mahitetsu" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -109,6 +109,7 @@
       <workItem from="1587894585217" duration="34166000" />
       <workItem from="1588147028227" duration="67678000" />
       <workItem from="1588506956481" duration="65730000" />
+      <workItem from="1588700586635" duration="7329000" />
     </task>
     <task id="LOCAL-00001" summary="workspace">
       <created>1588629542343</created>
@@ -128,7 +129,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
